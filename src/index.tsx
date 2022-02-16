@@ -24,13 +24,14 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <StyledEngineProvider injectFirst>
       <div
-        style={{ height: "100vh", display: "flex", flexDirection: "column" }}
+        style={{ height: "100vh", display: "flex", flexDirection: "column", backgroundColor:"black"}}
       >
         <Router>
           <Routes>
             {/*indexRoutes.map(({ path, component, exact, type }, key) => (
                                     <AuthRoute path={path} exact={exact} component={component} key={key} type={type} />
                                 ))*/}
+            
             <Route path="/" element={<Home />} />
           </Routes>
         </Router>

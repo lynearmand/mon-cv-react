@@ -1,6 +1,6 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { FunctionComponent } from "react";
-import { TitleSection } from "src/components";
+import { AboutMe } from "src/components";
 import useLayoutsStyles from "../../assets/layout";
 
 const Home: FunctionComponent = () => {
@@ -8,7 +8,9 @@ const Home: FunctionComponent = () => {
 
   return (
     <Grid container className={styles.grid_container}>
-      <TitleSection subtitle="Bonjour" title="Test"></TitleSection>
+      <Grid item  sm={12}>
+        <AboutMe/>
+      </Grid>
     </Grid>
   );
 };

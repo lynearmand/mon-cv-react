@@ -13,10 +13,8 @@ const TitleSection: FunctionComponent<Props> = ({ subtitle, title }) => {
   return (
     <Grid container className={styles.grid_container}>
       <Grid item sm={12}>
-        <Typography>{subtitle}</Typography>
-      </Grid>
-      <Grid item sm={12}>
-        <Typography>{title}</Typography>
+        <Typography className={styles.subtitle_yellow}>{subtitle}</Typography>
+        <Typography className={styles.title_white}>{title}</Typography>
       </Grid>
     </Grid>
   );
